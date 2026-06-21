@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#d4d2cd"/>
+  <rect x="0" y="0" width="800" height="600" fill="none" stroke="#b8b5af" stroke-width="2"/>
+  <text x="400" y="285" font-family="Georgia, serif" font-size="22" fill="#6e6b62" text-anchor="middle">Replace with</text>
+  <text x="400" y="320" font-family="Georgia, serif" font-size="22" fill="#6e6b62" text-anchor="middle">photo-03.jpg</text>
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="14" fill="#7a766d" text-anchor="middle">Suggested: landscape orientation, 4:3</text>
+</svg>

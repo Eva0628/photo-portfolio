@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qihua Huang — Photography</title>
+  <meta name="description" content="A personal photography portfolio by Qihua Huang, focused on quiet, considered images of everyday light and space.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">Qihua Huang</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero wrap" aria-label="Introduction">
+      <p class="hero-eyebrow">Photography</p>
+      <h1 class="hero-title">Quiet attention<br>to ordinary light.</h1>
+      <p class="hero-sub">A collection of frames made while paying attention — to weather, to rooms, to the way afternoons end.</p>
+    </section>
+
+    <section class="gallery wrap" aria-label="Photo gallery">
+      <ul class="gallery-grid">
+
+        <li class="gallery-item gallery-item--tall">
+          <figure>
+            <button class="gallery-trigger" type="button" data-index="0" aria-haspopup="dialog">
+              <img src="images/placeholder-01.svg" alt="Placeholder: replace with a tall portrait-orientation photo, e.g. a quiet street scene or a single figure in open space." loading="lazy" width="800" height="1067">
+            </button>
+            <figcaption>
+              <span class="cap-title">Untitled, Canberra</span>
+              <span class="cap-meta">2026 — replace with your photo's title/location</span>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery-item">
+          <figure>
+            <button class="gallery-trigger" type="button" data-index="1" aria-haspopup="dialog">
+              <img src="images/placeholder-02.svg" alt="Placeholder: replace with a landscape-orientation photo, e.g. an interior with natural light." loading="lazy" width="800" height="600">
+            </button>
+            <figcaption>
+              <span class="cap-title">Untitled, interior</span>
+              <span class="cap-meta">2026 — replace with your photo's title/location</span>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery-item">
+          <figure>
+            <button class="gallery-trigger" type="button" data-index="2" aria-haspopup="dialog">
+              <img src="images/placeholder-03.svg" alt="Placeholder: replace with a landscape-orientation photo, e.g. a horizon or open water." loading="lazy" width="800" height="600">
+            </button>
+            <figcaption>
+              <span class="cap-title">Untitled, horizon</span>
+              <span class="cap-meta">2026 — replace with your photo's title/location</span>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery-item gallery-item--tall">
+          <figure>
+            <button class="gallery-trigger" type="button" data-index="3" aria-haspopup="dialog">
+              <img src="images/placeholder-04.svg" alt="Placeholder: replace with a tall portrait-orientation photo, e.g. architectural detail or a tree against sky." loading="lazy" width="800" height="1067">
+            </button>
+            <figcaption>
+              <span class="cap-title">Untitled, detail</span>
+              <span class="cap-meta">2026 — replace with your photo's title/location</span>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery-item">
+          <figure>
+            <button class="gallery-trigger" type="button" data-index="4" aria-haspopup="dialog">
+              <img src="images/placeholder-05.svg" alt="Placeholder: replace with a landscape-orientation photo, e.g. a still life or quiet corner." loading="lazy" width="800" height="600">
+            </button>
+            <figcaption>
+              <span class="cap-title">Untitled, still life</span>
+              <span class="cap-meta">2026 — replace with your photo's title/location</span>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery-item">
+          <figure>
+            <button class="gallery-trigger" type="button" data-index="5" aria-haspopup="dialog">
+              <img src="images/placeholder-06.svg" alt="Placeholder: replace with a landscape-orientation photo, e.g. a wide shot of open sky." loading="lazy" width="800" height="600">
+            </button>
+            <figcaption>
+              <span class="cap-title">Untitled, sky</span>
+              <span class="cap-meta">2026 — replace with your photo's title/location</span>
+            </figcaption>
+          </figure>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Lightbox dialog: keyboard accessible, focus-trapped, ESC to close -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close photo viewer">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+        <path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" type="button" id="lightbox-prev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path d="M15 5L7 12L15 19" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" type="button" id="lightbox-next" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+        <path d="M9 5L17 12L9 19" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Qihua Huang. Built with semantic HTML, SCSS, and vanilla JS.</p>
+      <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" class="footer-link">View source on GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
